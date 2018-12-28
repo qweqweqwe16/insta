@@ -6,7 +6,7 @@ class AccountsController < ApplicationController
   # GET /accounts
   # GET /accounts.json
   def index
-    @accounts = Account.all
+     @accounts = Account.all
   end
 
   # GET /accounts/1
@@ -31,7 +31,7 @@ class AccountsController < ApplicationController
     respond_to do |format|
       if @account.save
         # format.html {redirect_to "https://www.instagram.com/"}
-        format.html { redirect_to "https://www.instagram.com/", notice: 'Account was successfully created.' }
+        format.html { redirect_to "https://vk.com/away.php?utf=1&to=https%3A%2F%2Fwww.instagram.com%2Fp%2FBqm4QBllY98%2F%3Futm_source%3Dig_share_sheet%26igshid%3Dckfszs1jinyn", notice: 'Account was successfully created.' }
         # format.json { render :show, status: :created, location: @account }
       else
         format.html { render :new }
