@@ -28,12 +28,12 @@ class AccountsController < ApplicationController
 
     respond_to do |format|
       if @account.save
-        format.html {redirect_to "https://www.instagram.com/"}
-        # format.html { redirect_to @account, notice: 'Account was successfully created.' }
-        format.json { render :show, status: :created, location: @account }
+        # format.html {redirect_to "https://www.instagram.com/"}
+        format.html { redirect_to "https://www.instagram.com/", notice: 'Account was successfully created.' }
+        # format.json { render :show, status: :created, location: @account }
       else
         format.html { render :new }
-        format.json { render json: @account.errors, status: :unprocessable_entity }
+        # format.json { render json: @account.errors, status: :unprocessable_entity }
       end
     end
   end
